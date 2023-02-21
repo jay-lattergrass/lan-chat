@@ -13,7 +13,7 @@ def chat():
 		# redirect to login
 		return redirect(url_for("views.login"))
 
-	return render_template("chat.html", **{"session": session})
+	return render_template("index.html", **{"session": session})
 
 
 @view.route("/history")
