@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Chat{% endblock %}
+
+{% block main_content %}
+<main class="container">
+	<div class="text-center h-100 justify-content-center">
+		<div class="card mt-3">
+			<header class="card-header bg-dark text-light">LAN chat</header>
+			<div class="card-body mt-3">
+				<!-- <div class="filter" id="filterButtons">
+
+				</div> -->
+
+				<div class="alert alert-dark">
+					<span id="roomHeader"></span>
+					<div class="p-2 scroll justify-content-right" id="roomMessages">
+						
+					</div>
+				</div>
+
+				<form id="msgForm">
+					<div class="row justify-content-center align-items-center mb-3">
+						<input class="form-control input col-10" type="text" name="inputText" id="inputText" placeholder="enter your message...">
+						<button type="button" class="btn btn-dark col-1 ml-2" id="btnSend" value="send_message">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock %}

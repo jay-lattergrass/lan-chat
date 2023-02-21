@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		{% block head %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device.width, initial-scale=1.0, shrink-to-fit=no">
+		<meta name="author" content="Jacob Lattergrass">
+		<meta name="author" content="Jacob Lattergrass">
+
+		<title>{% block title %}{% endblock %}</title>
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+		{% endblock %}
+	</head>
+
+	<body>
+		{% include 'navbar.html' %}
+		{% block main_content %}
+		{% endblock %}
+	</body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</html>

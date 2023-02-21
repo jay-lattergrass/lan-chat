@@ -1,0 +1,61 @@
+/* application styles */
+html, body{
+	height: 100%;
+}
+
+main{
+	height: 80%;
+}
+
+.navbar-brand{
+	font-size: 1.75rem;
+}
+
+.v-centered{
+ 	margin-left: auto;
+ 	margin-right: auto;
+}
+
+.h-centered{
+ 	margin-top: auto;
+ 	margin-bottom: auto;
+}
+
+/* chat styles */
+.chat-message{
+	border-radius: 25px;
+	padding: 10px;
+	background-color: white;
+	width: 50%;
+	justify-content: end;
+}
+.chat-message-user, .chat-message-date{padding-left: 25px;}
+.chat-message-user{color: rgb(170, 170, 170); padding-bottom: 5px;}
+.chat-message-content{padding-left: 30px;}
+.chat-message-date{color: rgb(170, 170, 170); padding-top: 5px;}
+
+.my-chat-message{
+	border-radius: 25px;
+	padding: 10px;
+	background-color: rgb(33, 138, 255);
+	width: 50%;
+	justify-content: start;
+}
+.my-message-content{padding-left: 30px; color: white;}
+.my-message-user, .my-message-date{color: rgb(200, 200, 200); padding-left: 25px;}
+.my-message-user{padding-bottom: 5px;}
+.my-message-date{padding-top: 5px;}
+
+.chat-history{
+	border-radius: 25px;
+	padding: 10px;
+	background-color: white;
+	width: 100%;
+	justify-content: end;
+}
+
+.scroll{
+	height: 600px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}

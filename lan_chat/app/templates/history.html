@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}History{% endblock %}
+
+{% block main_content %}
+<main class="container">
+	<div class="text-center h-100 justify-content-center">
+		<div class="card mt-3">
+			<header class="card-header bg-dark text-light">LAN chat</header>
+			<div class="card-body mt-3">
+				<div class="alert alert-dark">
+					<div class="p-2 scroll justify-content-right" id="historyMessages">
+						{% for msg in json %}
+							<div class="p-2 d-flex">
+								<div class="chat-history">
+									<div class="row chat-message-user">
+										{{ msg['user'] }}
+									</div>
+									<div class="row chat-message-content">
+										{{ msg['content'] }}
+									</div>
+									<div class="row chat-message-date">
+										{{ msg['created'] }}
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock %}

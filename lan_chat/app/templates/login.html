@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+
+{% block main_content %}
+<main class="container">
+	<div class="text-center h-100 d-flex align-items-center justify-content-center" style="margin-top: auto; margin-bottom: auto;">
+		<div class="w-50 p-3 v-centered">
+			<div class="card">
+				<header class="card-header bg-dark text-light">Login</header>
+				<div class="card-body">
+					<form id="login-form" method="POST">
+						<input class="form-control input mb-3 w-50 v-centered" type="text" name="inputName" placeholder="enter your name..." maxlength="25">
+						<input class="form-control input w-50 v-centered btn btn-dark" type="submit" name="btnSubmit" value="Login">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock %}
